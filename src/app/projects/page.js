@@ -106,6 +106,23 @@ const projects = [
   link: '',
   repo: 'https://github.com/emee144/my-movie-app',
 },
+{
+  title: 'Web3 Wallet (MetaMask dApp)',
+  description: 'A Web3 decentralized application built with Next.js that connects to MetaMask, verifies wallet ownership through message signing, and ensures users are on the Ethereum Mainnet. Includes ENS support, secure auth utilities, and smart contract tooling.',
+  tech: [
+    'Next.js',
+    'React',
+    'JavaScript',
+    'Tailwind CSS',
+    'ethers.js',
+    'Solidity',
+    'MetaMask',
+    'Hardhat',
+  ],
+  link: '',
+  repo: 'https://github.com/emee144/web3-wallet',
+}
+
 ];
 
 export default function Projects() {
