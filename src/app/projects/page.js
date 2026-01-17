@@ -25,7 +25,7 @@ const projects = [
   title: 'Fitness & Nutrition App',
   description: 'Cross-platform mobile app to track daily meals, calories, and macronutrients. Features interactive nutrition cards and real-time calorie totals for better health management.',
   tech: ['React Native', 'Expo', 'JavaScript', 'FlatList', 'StyleSheet'],
-  link: 'https://fitness-app-demo.netlify.app', 
+  link: '', 
   repo: 'https://github.com/emee144/fitness-app',
 },
 {
@@ -81,32 +81,31 @@ const projects = [
   title: 'Personal Finance Manager',
   description: 'A web-based personal finance application that helps users track income and expenses, manage budgets, and view financial reports through an interactive dashboard. Includes authentication and modular finance pages for better money management.',
   tech: ['React', 'Vite', 'JavaScript', 'CSS', 'React Router'],
-  link: 'https://finance-app-demo.netlify.app',
+  link: '',
   repo: 'https://github.com/emee144/finance',
 },
 {
   title: 'Mini Blog Application',
   description: 'A full-stack blog application built with ASP.NET Core that allows users to create, edit, and manage blog posts. Uses Entity Framework Core with SQLite for data persistence and follows MVC architecture with Razor Pages for server-rendered views.',
   tech: ['ASP.NET Core', 'C#', 'Entity Framework Core', 'SQLite', 'Razor Pages', 'HTML', 'CSS'],
-  link: 'https://myblogapp-demo.azurewebsites.net',
+  link: '',
   repo: 'https://github.com/emee144/MyBlogApp',
 },
-  {
-    title: 'Job Board Portal',
-    description: 'Job listing platform with resume upload, search filters, and employer dashboard.',
-    tech: ['Next.js', 'Express', 'MongoDB', 'JWT Auth'],
-    link: 'https://job-board-demo.vercel.app',
-    repo: 'https://github.com/emee144/job-portal',
-    type: 'Web App',
-  },
-  {
-    title: 'Weather & Forecast App',
-    description: 'Modern mobile weather app with hourly/daily forecasts, location-based alerts, and beautiful UI.',
-    tech: ['React Native', 'OpenWeather API', 'Expo Location'],
-    link: 'https://weather-app-demo.netlify.app',
-    repo: 'https://github.com/emee144/weather-mobile',
-    type: 'Mobile App',
-  },
+{
+  title: 'Movie Streaming & Discovery Platform',
+  description: 'A full-stack movie application built with Next.js (App Router) that allows users to browse movies, view embedded trailers, and manage user authentication and dashboard features. Uses Sequelize ORM with MySQL and migration-based schema management for scalable backend data handling.',
+  tech: [
+    'Next.js',
+    'React',
+    'JavaScript',
+    'Sequelize',
+    'MySQL',
+    'Tailwind CSS',
+    'App Router',
+  ],
+  link: '',
+  repo: 'https://github.com/emee144/my-movie-app',
+},
 ];
 
 export default function Projects() {
