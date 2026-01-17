@@ -2,10 +2,12 @@
 
 import { motion } from 'framer-motion';
 import Link from 'next/link';
+import Image from 'next/image';
 
 const projects = [
   {
     title: 'Lexance Crypto CEX Exchange',
+    image: '/projects/lexance.jpeg',
     description: 'Trade, manage, and track cryptocurrencies with ease using Lexance. Features include real-time market data, secure wallets, and an intuitive interface for web and mobile users.',
     tech: ['Next.js', 'React', 'MongoDB', 'Binance API', 'CoinGecko API', 'Tradingview Chart'],
     link: 'https://lexance.vercel.app',
@@ -14,6 +16,7 @@ const projects = [
   },
 {
   title: 'NexTrade Web App',
+  image: '/projects/nextrade.jpeg',
   description: 'Real-time crypto trading platform with secure login, portfolio management, and referral system. Built with Next.js, React, and Framer Motion for smooth animations.',
   tech: ['Next.js', 'React', 'Framer Motion', 'Tailwind CSS', 'Node.js', 'Coingecko API', 'Tradingview Chart'],
   link: 'https://nextrade-five.vercel.app',
@@ -30,6 +33,7 @@ const projects = [
 },
 {
   title: 'Remi Oseni Foundation Website',
+  image: '/projects/remi.jpeg',
   description: 'Community-focused web platform highlighting youth empowerment programs, food support initiatives, and organizational impact in Ibadan, Nigeria. Features dynamic hero sections, program showcases, and testimonials.',
   tech: ['Next.js', 'React', 'Framer Motion', 'Tailwind CSS', 'Image Optimization'],
   link: 'https://remiosenifoundation.org', 
@@ -149,7 +153,20 @@ export default function Projects() {
               transition={{ duration: 0.5, delay: index * 0.1 }}
               className="bg-gray-900/50 rounded-xl overflow-hidden border border-gray-800 hover:border-gray-600 transition-all group"
             >
-              <div className="p-6">
+              {project.image && (
+  <div className="flex justify-center pt-6">
+    <Image
+      src={project.image}
+      alt={project.title}
+      width={300}          
+      height={80}
+      className="rounded-lg object-contain"
+    />
+  </div>
+)}
+
+<div className="p-6 pt-4">
+
                 <h3 className="text-2xl font-semibold mb-3 group-hover:text-blue-400 transition-colors">
                   {project.title}
                 </h3>
