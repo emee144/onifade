@@ -6,6 +6,14 @@ import Image from 'next/image';
 
 const projects = [
   {
+    title: 'Comfort Service Apartment',
+    image: '/projects/comfort.jpeg',
+    description: 'A modern web application for booking and managing service apartments. Features include real-time availability, secure reservations, and a user-friendly interface for seamless travel planning.',
+    tech: ['Next.js', 'React', 'Tailwind CSS', 'Node.js', 'Express.js', 'MongoDB'],
+    link: 'https://comfortserene.com',
+    repo: 'https://github.com/emee144/comfort.git',
+  },
+  {
     title: 'Lexance Crypto CEX Exchange',
     image: '/projects/lexance.jpeg',
     description: 'Trade, manage, and track cryptocurrencies with ease using Lexance. Features include real-time market data, secure wallets, and an intuitive interface for web and mobile users.',
