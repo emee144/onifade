@@ -6,6 +6,14 @@ import Image from 'next/image';
 
 const projects = [
   {
+    title: 'AwayHome Properties listing',
+    image: '/projects/awayhome.jpeg',
+    description: 'A modern web application for connecting landlords and tenants, buyers and sellers of different properties like shortlets, hotels, rental properties. Features include real-time availability,  and a user-friendly interface .',
+    tech: ['Next.js', 'React', 'Tailwind CSS', 'Node.js', 'MongoDB'],
+    link: 'https://awayhomehq.com',
+    repo: 'https://github.com/emee144/awayhome.git',
+  },
+  {
     title: 'Comfort Service Apartment',
     image: '/projects/comfort.jpeg',
     description: 'A modern web application for booking and managing service apartments. Features include real-time availability, secure reservations, and a user-friendly interface for seamless travel planning.',
